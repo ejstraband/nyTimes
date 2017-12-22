@@ -21,28 +21,33 @@
 		</div>
 			
 		<div id="iSearchPocket" class="cSearchPocket">
-			stuff
-			<div id="iSearchFrame" class="cSearchFrame">
-				<!-- form build out -->
-				<div id="iSearchTerm" class="cSearch">Search Term</div>
-				<div id="iNumOfRecords" class="cSearch">
-					<select name="NumORecords">
-						<option value="1">1</option>
-						<option value="3">3</option>
-						<option value="5">5</option>
-						<option value="10">10</option>
-					</select>
-				</div>
-				Start Year
-				End Year
-			</div>
+			
+			<form>
+				<div id="iSearchFrame" class="cSearchFrame">
+					<!-- form build out -->
+					<label for="exmpleInputSearch">Search Term</label>
+					<input type="tSearchTerm" id="iSearchTerm" class="cSearch" placeholder="Search Here"></input>
+					
+					<div id="iNumOfRecords" class="cSearch">
+						<select class="form-control" id="iNumOfRecords" name="NumORecords">
+							<option value="1">1</option>
+							<option value="3">3</option>
+							<option value="5">5</option>
+							<option value="10">10</option>
+						</select>
+					</div>
 
-			<div id="iPrfmSearch" class="cPrfmSearch">
-				<button>Perform Search</button>
-			</div>
-			<div id="iClrSearch" class="cClrSearch">
-				<button>Clear Search</button>
-			</div>
+					<div id="iStartYr" class="cStartYr">Start Year</div>
+					<div id="iEndYr" class="EndYr">End Year</div>
+				</div>
+
+				<div id="iPrfmSearch" class="cPrfmSearch">
+					<button>Perform Search</button>
+				</div>
+				<div id="iClrSearch" class="cClrSearch">
+					<button>Clear Search</button>
+				</div>
+			</form>
 
 		</div>
 
