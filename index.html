@@ -12,21 +12,28 @@
 <body>
 
 	<div id="iMain" class="cMain">
-		<div id="iHeader" class="cHeader">
-			Header
+
+		<!--Header information -->
+		<div id="iHeader" class="cHeader card">
+			<h2 class="card-header">NY Times</h2>
+			<div>
+				<h4 class="card-title">use the button!</h4>
+				<p> USE THE BUTTON!!</p>
+				<a href="#" class="btn btn-primary">Go Somewhere!!</a>
+			</div>
 		</div>
 
+		<!-- May be used at a later date-->
 		<div id="iHidShowBtn" class="cHidShowBtn">
 			<button>Button</button>
 		</div>
 			
 		<div id="iSearchPocket" class="cSearchPocket">
-			
 			<form>
 				<div id="iSearchFrame" class="cSearchFrame">
-					<!-- form build out -->
-					<label for="exmpleInputSearch">Search Term</label>
-					<input type="tSearchTerm" id="iSearchTerm" class="cSearch" placeholder="Search Here"></input>
+					<!-- Search Form -->
+					<label for="inputSearch">Search Term</label>
+					<input type="tSearchTerm" class="cSearch" placeholder="Search Here"></input>
 					
 					<div id="iNumOfRecords" class="cSearch">
 						<select class="form-control" id="iNumOfRecords" name="NumORecords">
@@ -36,9 +43,12 @@
 							<option value="10">10</option>
 						</select>
 					</div>
+					
+					<label for="StartYr">Start Year</label>
+					<input type="tStartYr" class="cStartYr" placeholder="Enter Start Year" id="iStartYr"></input>
 
-					<div id="iStartYr" class="cStartYr">Start Year</div>
-					<div id="iEndYr" class="EndYr">End Year</div>
+					<label id="iEndYr" class="EndYr">End Year</label>
+					<input type="tEndYr" class="cEndYr" placeholder="Enter End Year" id="iEndYr">
 				</div>
 
 				<div id="iPrfmSearch" class="cPrfmSearch">
@@ -48,7 +58,6 @@
 					<button>Clear Search</button>
 				</div>
 			</form>
-
 		</div>
 
 		<div id="iResults" class="cResults">
@@ -56,6 +65,9 @@
 		</div>
 
 	</div>
+
+
+
 		<!-- Link to my jQuery information -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	
