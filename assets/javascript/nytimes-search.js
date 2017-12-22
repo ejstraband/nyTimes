@@ -1,13 +1,13 @@
 var startYear;
 var endYear;
 var searchTerm;
-var resultCount = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var resultCount;
 
 
 // Built by LucyBot. www.lucybot.com
 
 
-$('#iprfmsearch').on('click', function() {
+$('#iPrfmSearch').on('click', function() {
 
 	var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
 	url += '?' + $.param({ searchTerm, startYear, endYear, resultCount, 
@@ -22,5 +22,17 @@ $('#iprfmsearch').on('click', function() {
 	  	console.log(result);
 
 	  	
+	  	
+	  	
 	});
+});
+
+$('#iClrSearch').on('click', function() {
+
+	$('#iSearchFrame').clear();
+	$('#iNumOfRecords').clear();
+	$('#iStartYr').clear();
+	$('#iEndYr').clear();
+	$('#iResults').clear();
+
 });
